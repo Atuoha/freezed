@@ -177,3 +177,355 @@ abstract class _User implements User {
   _$$UserImplCopyWith<_$UserImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
+
+/// @nodoc
+mixin _$OperationNested {
+  int get value => throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(int value) add,
+    required TResult Function(int value) subtract,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(int value)? add,
+    TResult? Function(int value)? subtract,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(int value)? add,
+    TResult Function(int value)? subtract,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Add value) add,
+    required TResult Function(_Subtract value) subtract,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Add value)? add,
+    TResult? Function(_Subtract value)? subtract,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Add value)? add,
+    TResult Function(_Subtract value)? subtract,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
+
+  @JsonKey(ignore: true)
+  $OperationNestedCopyWith<OperationNested> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $OperationNestedCopyWith<$Res> {
+  factory $OperationNestedCopyWith(
+          OperationNested value, $Res Function(OperationNested) then) =
+      _$OperationNestedCopyWithImpl<$Res, OperationNested>;
+  @useResult
+  $Res call({int value});
+}
+
+/// @nodoc
+class _$OperationNestedCopyWithImpl<$Res, $Val extends OperationNested>
+    implements $OperationNestedCopyWith<$Res> {
+  _$OperationNestedCopyWithImpl(this._value, this._then);
+
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? value = null,
+  }) {
+    return _then(_value.copyWith(
+      value: null == value
+          ? _value.value
+          : value // ignore: cast_nullable_to_non_nullable
+              as int,
+    ) as $Val);
+  }
+}
+
+/// @nodoc
+abstract class _$$AddImplCopyWith<$Res>
+    implements $OperationNestedCopyWith<$Res> {
+  factory _$$AddImplCopyWith(_$AddImpl value, $Res Function(_$AddImpl) then) =
+      __$$AddImplCopyWithImpl<$Res>;
+  @override
+  @useResult
+  $Res call({int value});
+}
+
+/// @nodoc
+class __$$AddImplCopyWithImpl<$Res>
+    extends _$OperationNestedCopyWithImpl<$Res, _$AddImpl>
+    implements _$$AddImplCopyWith<$Res> {
+  __$$AddImplCopyWithImpl(_$AddImpl _value, $Res Function(_$AddImpl) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? value = null,
+  }) {
+    return _then(_$AddImpl(
+      null == value
+          ? _value.value
+          : value // ignore: cast_nullable_to_non_nullable
+              as int,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$AddImpl implements _Add {
+  const _$AddImpl(this.value);
+
+  @override
+  final int value;
+
+  @override
+  String toString() {
+    return 'OperationNested.add(value: $value)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$AddImpl &&
+            (identical(other.value, value) || other.value == value));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, value);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$AddImplCopyWith<_$AddImpl> get copyWith =>
+      __$$AddImplCopyWithImpl<_$AddImpl>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(int value) add,
+    required TResult Function(int value) subtract,
+  }) {
+    return add(value);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(int value)? add,
+    TResult? Function(int value)? subtract,
+  }) {
+    return add?.call(value);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(int value)? add,
+    TResult Function(int value)? subtract,
+    required TResult orElse(),
+  }) {
+    if (add != null) {
+      return add(value);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Add value) add,
+    required TResult Function(_Subtract value) subtract,
+  }) {
+    return add(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Add value)? add,
+    TResult? Function(_Subtract value)? subtract,
+  }) {
+    return add?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Add value)? add,
+    TResult Function(_Subtract value)? subtract,
+    required TResult orElse(),
+  }) {
+    if (add != null) {
+      return add(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _Add implements OperationNested {
+  const factory _Add(final int value) = _$AddImpl;
+
+  @override
+  int get value;
+  @override
+  @JsonKey(ignore: true)
+  _$$AddImplCopyWith<_$AddImpl> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$SubtractImplCopyWith<$Res>
+    implements $OperationNestedCopyWith<$Res> {
+  factory _$$SubtractImplCopyWith(
+          _$SubtractImpl value, $Res Function(_$SubtractImpl) then) =
+      __$$SubtractImplCopyWithImpl<$Res>;
+  @override
+  @useResult
+  $Res call({int value});
+}
+
+/// @nodoc
+class __$$SubtractImplCopyWithImpl<$Res>
+    extends _$OperationNestedCopyWithImpl<$Res, _$SubtractImpl>
+    implements _$$SubtractImplCopyWith<$Res> {
+  __$$SubtractImplCopyWithImpl(
+      _$SubtractImpl _value, $Res Function(_$SubtractImpl) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? value = null,
+  }) {
+    return _then(_$SubtractImpl(
+      null == value
+          ? _value.value
+          : value // ignore: cast_nullable_to_non_nullable
+              as int,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$SubtractImpl implements _Subtract {
+  const _$SubtractImpl(this.value);
+
+  @override
+  final int value;
+
+  @override
+  String toString() {
+    return 'OperationNested.subtract(value: $value)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$SubtractImpl &&
+            (identical(other.value, value) || other.value == value));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, value);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$SubtractImplCopyWith<_$SubtractImpl> get copyWith =>
+      __$$SubtractImplCopyWithImpl<_$SubtractImpl>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(int value) add,
+    required TResult Function(int value) subtract,
+  }) {
+    return subtract(value);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(int value)? add,
+    TResult? Function(int value)? subtract,
+  }) {
+    return subtract?.call(value);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(int value)? add,
+    TResult Function(int value)? subtract,
+    required TResult orElse(),
+  }) {
+    if (subtract != null) {
+      return subtract(value);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Add value) add,
+    required TResult Function(_Subtract value) subtract,
+  }) {
+    return subtract(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Add value)? add,
+    TResult? Function(_Subtract value)? subtract,
+  }) {
+    return subtract?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Add value)? add,
+    TResult Function(_Subtract value)? subtract,
+    required TResult orElse(),
+  }) {
+    if (subtract != null) {
+      return subtract(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _Subtract implements OperationNested {
+  const factory _Subtract(final int value) = _$SubtractImpl;
+
+  @override
+  int get value;
+  @override
+  @JsonKey(ignore: true)
+  _$$SubtractImplCopyWith<_$SubtractImpl> get copyWith =>
+      throw _privateConstructorUsedError;
+}
